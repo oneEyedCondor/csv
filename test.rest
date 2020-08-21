@@ -1,0 +1,15 @@
+// REST Client plugin
+
+GET http://localhost:4000/api/users
+
+###
+
+GET http://localhost:4000/api/csv
+
+###
+
+POST http://localhost:4000/api/csv
+Content-Type: multipart/form-data; boundary=<calculated when request is sent>
+{
+    "users": "users.csv",
+}
